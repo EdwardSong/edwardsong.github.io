@@ -22,7 +22,7 @@ required.  BeanInitializationException will be thrown if the bean is fetched fro
 without the dependency properly injected.
 
 
-####Some History
+#### Some History
 In the early 2000's there were two primary dependency injection frameworks, Spring and PicoContainer.
 PicoContainer focused on constructor injection and Spring focused on setter injection.  Both containers
 also supported the other injector variant, but publically published their recommendations. 
@@ -30,7 +30,7 @@ also supported the other injector variant, but publically published their recomm
 while [Spring in 3.x actively recommended setter injection](https://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/beans.html#d0e2778).
 
 
-####Considerations
+#### Considerations
 Setter injection it is!  I still do not have my mind made up, but if someone asked me for a formal
 recommendation, I would say, it depends.  Are you building software that is highly configurable?  
 Are many of those configurations optional?  If you are building an application, the answer is more 
@@ -63,23 +63,9 @@ an instance of class A through constructor injection.  The drawback has workarou
 a nice point to reflect on your architecture, so I don't see it as a drawback.  
 
 
-####Conclusion
+#### Conclusion
 Start off with constructor injection, if you are unsure.  Understand the reasoning, and moved to setter
 injection in cases where reconfiguration or reinjection happens.  Setter injection is also valid for
 optional dependencies.  
 [In Spring 4.x, the recommendation has changed to constructor injection.](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/beans.html#beans-setter-injection)
      
-
-
-
-
-
-
-
-
-#### OS/X
-Show Hidden Files in Finder - `Command + Shift + .`
-
-#### Markdown
-
-Links - `[linked text](url)`
