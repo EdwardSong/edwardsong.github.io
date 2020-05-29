@@ -4,7 +4,9 @@ title: Dependency Injection - Constructor Injection vs. Setter Injection
 ---
 
 ## Constructor Injection vs. Setter Injection
-Is there a difference? 
+Is there a difference?  Hint: Yes, there is and maybe you need to wrap your head around it.
+In this point, I'll discuss the differences, some history and my own editorial on
+Constructor Injection vs. Setter Injection.
 
 > Constructor injection - is the act of statically defining the list of 
 required Dependencies by specifying them as parameters to the class's constructor. 
