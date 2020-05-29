@@ -33,14 +33,15 @@ while [Spring in 3.x actively recommended setter injection](https://docs.spring.
 
 
 ### Considerations
-Setter injection it is!  I still do not have my mind made up, but if someone asked me for a formal
-recommendation, I would say, it depends.  Are you building software that is highly configurable?  
-Are many of those configurations optional?  If you are building an application, the answer is more 
-likely no, but if you are building a framework, well, then maybe yes.  
+Setter injection it is!  I still do not have my mind made up, it depends on the situation.  Are you 
+building highly configurable software, such as a framework?  Are those configurations optional?
+Do those configurations cascade and determine which dependencies or implementations are enabled? 
+When building an application, the answer tends to be clearer.  
 
-I am currently working on application, there is some configuration, but most of it is required, not 
-optional.  These configurations also do not cascade much into the implementation or type
-of dependency. In this particular instance, I'm living in the constructor injection camp.  
+In an application, there is some configuration, but most of it is required, not 
+optional.  These configurations also do not drive different implementations of an application.
+That level of configuration are often found in frameworks vs. applications. In this particular instance, 
+I'm living in the constructor injection camp.  
 
 Constructor injection is great for mandatory dependencies.  Those, which are required for the object's
 methods to function properly.  By specifying the dependencies in the constructure, you guarantee 
