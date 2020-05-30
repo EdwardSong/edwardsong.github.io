@@ -33,7 +33,7 @@ while [Spring in 3.x actively recommended setter injection](https://docs.spring.
 
 
 ### Considerations
-Setter injection it is!  I still do not have my mind made up, it depends on the situation.  Are you 
+Setter injection it is!  Not so fast.  It depends on the situation.  Are you 
 building highly configurable software, such as a framework?  Are those configurations optional?
 Do those configurations cascade and determine which dependencies or implementations are enabled? 
 When building an application, the answer tends to be clearer.  
